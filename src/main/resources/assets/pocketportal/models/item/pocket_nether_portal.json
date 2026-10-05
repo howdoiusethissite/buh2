@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "pocketportal:item/pocket_nether_portal"
+	}
+}

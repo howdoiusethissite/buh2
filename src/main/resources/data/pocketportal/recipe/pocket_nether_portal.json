@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"O": "minecraft:obsidian",
+		"F": "minecraft:flint_and_steel"
+	},
+	"pattern": [
+		"OOO",
+		"OFO",
+		"OOO"
+	],
+	"result": {
+		"id": "pocketportal:pocket_nether_portal",
+		"count": 1
+	}
+}

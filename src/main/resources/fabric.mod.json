@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "pocketportal",
+	"version": "${version}",
+	"name": "Pocket Portal",
+	"description": "Obsidian mines as fast as glass (blast resistance unchanged) and a craftable Pocket Nether Portal item that hops you between the Overworld and Nether without building portals.",
+	"authors": ["wickedguhlinda"],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.example.pocketportal.PocketPortal"]
+	},
+	"mixins": ["pocketportal.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.3-",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
