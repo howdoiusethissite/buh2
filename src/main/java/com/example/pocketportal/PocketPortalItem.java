@@ -46,13 +46,13 @@ public class PocketPortalItem extends Item {
 			targetKey = Level.OVERWORLD;
 			scale = 8.0;
 		} else {
-			serverPlayer.displayClientMessage(Component.literal("The pocket portal only works in the Overworld and the Nether."), true);
+			serverPlayer.sendSystemMessage(Component.literal("The pocket portal only works in the Overworld and the Nether."), true);
 			return InteractionResult.FAIL;
 		}
 
 		ServerLevel target = from.getServer().getLevel(targetKey);
 		if (target == null) {
-			serverPlayer.displayClientMessage(Component.literal("That dimension is not available."), true);
+			serverPlayer.sendSystemMessage(Component.literal("That dimension is not available."), true);
 			return InteractionResult.FAIL;
 		}
 
@@ -62,7 +62,7 @@ public class PocketPortalItem extends Item {
 
 		Vec3 spot = findSafeSpot(target, BlockPos.containing(x, preferredY, z));
 		if (spot == null) {
-			serverPlayer.displayClientMessage(Component.literal("No safe landing spot found over there."), true);
+			serverPlayer.sendSystemMessage(Component.literal("No safe landing spot found over there."), true);
 			return InteractionResult.FAIL;
 		}
 
